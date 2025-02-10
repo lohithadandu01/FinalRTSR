@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examinations</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom right, lightblue, peachpuff);
+            color: black; /* Set all text to black */
+        }
+        header {
+            margin-bottom: 7rem; /* Adjusted margin to bring the title lower */
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            gap: 2rem;
+        }
+        .section {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 3rem; /* Increased size for prominence */
+            margin: 0;
+        }
+        h2 {
+            color: black; /* Set headings to black */
+            font-size: 2rem; /* Increased size for prominence */
+            text-align: center;
+            margin: 0;
+            cursor: pointer; /* Add pointer cursor to indicate clickable */
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px; /* Adjust as needed */
+            height: 100px; /* Adjust as needed */
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.jpeg" alt="Career Cruise Logo" class="logo">
+    <header>
+        <h1>Exams to step into Engineering</h1>
+    </header>
+    <div class="container">
+        <div id="post10th" class="section" onclick="location.href='post10th.html';">
+            <h2>Post 10th</h2>
+        </div>
+        <div id="postinter" class="section" onclick="location.href='postinter.html';">
+            <h2>Post Inter/Diploma</h2>
+        </div>
+        <div id="Study-Abroad" class="section" onclick="location.href='studyabroad.html';">
+            <h2>Study Abroad</h2>
+        </div>
+    </div>
+</body>
+</html>
